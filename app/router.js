@@ -1,3 +1,5 @@
+// app/router.js
+
 import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
 
@@ -7,11 +9,16 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('options');
-  this.route('tutorial');
+
+  this.route('about');
+  this.route('contact');
 
   this.route('admin', function() {
     this.route('invitations');
+  });
+
+  this.route('libraries', function() {
+    this.route('new');
   });
 });
 
