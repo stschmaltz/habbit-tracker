@@ -8,16 +8,16 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
 
-  this.route('about');
-  this.route('contact');
+  this.route('options');
+  this.route('tutorial');
 
-  this.route('admin', function() {
+  this.route('admin', function () {
     this.route('invitations');
   });
 
-  this.route('libraries', function() {
+  this.route('libraries', function () {
     this.route('new');
   });
 });
