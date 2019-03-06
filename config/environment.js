@@ -6,6 +6,12 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: 'AIzaSyC5ZONdI9vaGI3dOX-EYiSUcktduIQjjTA',
+      authDomain: 'habbit-tracker-e8c22.firebaseapp.com',
+      databaseURL: 'https://habbit-tracker-e8c22.firebaseio.com',
+      storageBucket: 'habbit-tracker-e8c22.appspot.com',
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -13,14 +19,14 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
   };
 
   if (environment === 'development') {

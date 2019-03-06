@@ -14,11 +14,10 @@
 
       <div class="collapse navbar-collapse" id="main-navbar">
         <ul class="nav navbar-nav">
-          {{#link-to "index" tagName="li"}}<a href="">Home</a>{{/link-to}}
-          {{#link-to "options" tagName="li"}}<a href="">Options</a>{{/link-to}}
-          {{#link-to "tutorial" tagName="li"}}<a href="">Tutorial</a>{{/link-to}}
-          {{#link-to "libraries" tagName="li"}}<a href="">Libraries</a>{{/link-to}}
-
+          {{#nav-link-to "index"}}Home{{/nav-link-to}}
+          {{#nav-link-to "options"}}Options{{/nav-link-to}}
+          {{#nav-link-to "tutorial"}}Tutorial{{/nav-link-to}}
+          {{#nav-link-to "libraries"}}Libraries{{/nav-link-to}}
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
@@ -27,7 +26,7 @@
               Admin<span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              {{#link-to "admin.invitations" tagName="li"}}<a href="">Invitations</a>{{/link-to}}
+              {{#nav-link-to "admin.invitations"}}Invitations{{/nav-link-to}}
             </ul>
           </li>
         </ul>
