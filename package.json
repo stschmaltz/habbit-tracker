@@ -1,8 +1,8 @@
 {
-  "name": "habbit-tracker",
+  "name": "library-listings",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for habbit-tracker goes here",
+  "description": "Ember tutorial for library listings with books and authors",
   "repository": "",
   "license": "MIT",
   "author": "",

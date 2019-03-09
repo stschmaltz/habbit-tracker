@@ -5,7 +5,8 @@ export default Component.extend({
 
   actions: {
     buttonClicked(param) {
-      this.sendAction('action', param);
+      this.sendAction('action', param); // eslint-disable-line ember/closure-actions
+
     },
   },
 });
