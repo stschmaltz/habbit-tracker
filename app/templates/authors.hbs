@@ -15,17 +15,17 @@
     <tr>
       <td>
         {{#if author.isEditing}}
-        <form {{action 'saveAuthor' author on='submit'}} class="form-inline">
+        <form {{action "saveAuthor" author on="submit"}} class="form-inline">
           <div class="input-group">
             {{input value=author.name class="form-control"}}
             <div class="input-group-btn">
               <button type="submit" class="btn btn-success" disabled={{author.isNotValid}}>Save</button>
-              <button class="btn btn-danger" {{action 'cancelAuthorEdit' author}}>Cancel</button>
+              <button class="btn btn-danger" {{action "cancelAuthorEdit" author}}>Cancel</button>
             </div>
           </div>
         </form>
         {{else}}
-        <span {{action 'editAuthor' author}}>{{author.name}}</span>
+        <span {{action "editAuthor" author}}>{{author.name}}</span>
         {{/if}}
       </td>
       <td>
